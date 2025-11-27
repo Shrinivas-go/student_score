@@ -7,7 +7,7 @@ scores = [10, 20, 30, 40, 50]
 if len(sys.argv) <= 1:
     print("No scores provided. Using default values:", scores)
 else:
-    scores = [float(num) for num in sys.argv[1:]]
+    scores = [int(num) for num in sys.argv[1:]]
 
 total = sum(scores)
 average = total / len(scores)
